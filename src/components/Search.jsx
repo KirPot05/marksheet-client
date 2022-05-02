@@ -6,8 +6,7 @@ function Search() {
 
 	const [name, setName] = useState('');
 	const [id, setId] = useState('');
-	const { changeURL } = useData();
-
+	const { changeURL, data } = useData();
 
 	const handleSearch = (e) => {
 		e.preventDefault();
@@ -18,7 +17,7 @@ function Search() {
 	}	
 
 	return (
-		<form className="search" onSubmit={handleSearch} >
+		<form className="search" style={{marginTop: `${(!data || data.length < 2) && "5rem"}`}} onSubmit={handleSearch} >
 			<input 
 				type="text" 
 				name="name" 

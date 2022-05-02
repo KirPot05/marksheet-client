@@ -3,15 +3,12 @@ import { DataProvider } from "./context/dataContext";
 import CustomTable from "./components/CustomTable";
 import NavBar from "./components/NavBar";
 import Search from "./components/Search";
-import { useRef } from "react";
 
 function App() {
 
 
 	return (
 		<DataProvider>
-
-
 			<div className="App">
 				<NavBar />
 
@@ -21,10 +18,10 @@ function App() {
 						<CustomTable />
 					</div>
 
-
 					<Search />
 				</div>
 			</div>
+			
 		</DataProvider>
 	);
 }

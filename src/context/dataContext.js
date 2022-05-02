@@ -21,7 +21,7 @@ export function DataProvider({children}){
         return data;
     }
 
-    const getMarks = (marks, idx = 0) => {
+    const getMarks = (marks, idx) => {
 
         if(idx >= 0){
             let subMark = 0;
@@ -57,6 +57,7 @@ export function DataProvider({children}){
         }
 
         fetchData();
+        
     }, [url])
 
     const value = {
