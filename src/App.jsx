@@ -1,29 +1,31 @@
-import './App.css';
-import CustomTable from './components/CustomTable';
-import NavBar from './components/NavBar';
-import Options from './components/Options';
-import Search from './components/Search';
-// import Table from './components/Table';
+import "./App.css";
+import { DataProvider } from "./context/dataContext";
+import CustomTable from "./components/CustomTable";
+import NavBar from "./components/NavBar";
+import Search from "./components/Search";
+import { useRef } from "react";
 
 function App() {
+
+
 	return (
-		<div className="App">
+		<DataProvider>
 
-			<NavBar/>
 
-			<div className="app__body">
-				{/* <Table/> */}
-				<div className="container">
-					<Options/>
-					<CustomTable/>
+			<div className="App">
+				<NavBar />
 
+				<div className="app__body">
+					{/* <Table/> */}
+					<div className="container">
+						<CustomTable />
+					</div>
+
+
+					<Search />
 				</div>
-				
-				<Search/>
 			</div>
-		
-		
-		</div>
+		</DataProvider>
 	);
 }
 
