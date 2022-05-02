@@ -1,0 +1,33 @@
+.result__Table{
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    
+}
+
+.table__heading{
+    background-color: rgb(36, 36, 36) !important;
+}
+
+.table__heading > th{
+    padding: 0.6rem 1rem;
+    color: white;
+}
+
+.table__heading > th:first-child{
+    border-radius: 0.5rem 0 0 0;
+}
+
+.table__heading > th:last-child{
+    border-radius: 0 0.5rem 0 0;
+}
+
+.table_data > td{
+    padding: 0.6rem 1rem;
+}
+
+tr:nth-child(odd){
+    background-color: rgba(199, 199, 199, 0.4);
+}
+
